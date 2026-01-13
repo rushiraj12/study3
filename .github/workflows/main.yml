@@ -1,0 +1,13 @@
+name: Print Message on Push Rushi
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  print-message:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print message
+        run: echo "Hello! A push was made to the main Rushi."
